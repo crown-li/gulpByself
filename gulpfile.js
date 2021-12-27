@@ -14,7 +14,8 @@ const sourcemaps = require('gulp-sourcemaps');
 
 
 
-const files = fs.readdirSync(pathName)
+// const files = fs.readdirSync(pathName)
+const files = fs.readdirSync('./../')
 files.splice(files.indexOf('gulp'),1)
 let ROOT_DIR = `../${files[0]}` 
 console.log('ROOT_DIR:',ROOT_DIR)
